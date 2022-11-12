@@ -1,1 +1,34 @@
-# Your requirements go here
+# build a quiz game
+
+#(Will do) requirements
+
+1. Game intro
+
+
+2. Start Game (show first question and show options "ansers")
+
+
+3. Grade the users anser (compare users anser to the correct answer)
+
+
+4. End game
+ 
+
+
+#Stretch Goals:
+
+1. Welcome message 
+game instructions
+enter user name (user to enter more than two letters)
+Count down sequence
+add emojis
+
+
+2. Display questions in a random order
+
+
+3. Give the user a correct message, if user input is correct, or incorrect. 
+    Add a score to the users answers for correct or incorrect.
+
+
+4. Give user choice to play again or to end the game
