@@ -31,7 +31,7 @@ def main():
     game_intro()
 
     name = users_name()
-    print("Lets begin!")
+    print(f"{name} Lets Begin!")
 
 
 main()
