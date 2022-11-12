@@ -3,9 +3,20 @@
 #(Will do) requirements
 
 1. Game intro
+    #Stretch Goal:
+    - Enter user name (user to enter more than two letters)
+    - Game instructions
+    - Count down sequence
+    - Add emojis
 
 
 2. Start Game (show first question and show options "ansers")
+     #Stretch Goal:
+     - Display questions in a random order.
+     - Display ansers (A,B,C) or (1,2,3)
+
+     # will Do:
+     - give user a way to input answer
 
 
 3. Grade the users anser (compare users anser to the correct answer)
@@ -27,8 +38,17 @@ add emojis
 2. Display questions in a random order
 
 
-3. Give the user a correct message, if user input is correct, or incorrect. 
-    Add a score to the users answers for correct or incorrect.
+3. Give the user a message if answer is correct or incorrect
 
 
-4. Give user choice to play again or to end the game
+4. Give user choice to play again or to end the game\
+
+
+
+
+# Sundays list of things to do. 
+. add usere instructions
+. create a list question questions and answers
+. display questions and answers
+. create an input for the user to answer question.
+. Increment answer. 
