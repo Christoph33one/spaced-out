@@ -59,7 +59,7 @@ def users_name():
         return name
 
 
-def show_next_question():
+def show_next_question(question):
     """
 
     Function to take key (question) as an argument to retrieve value from
@@ -67,7 +67,7 @@ def show_next_question():
     for loop to get key value from dictionay and print only the key (questions)
     to the user.
     """
-    
+    print(question["question"])
 
 
 def main():
@@ -85,6 +85,10 @@ def main():
     for i in timer:
         print(i)
         time.sleep(0.3)
+
+    for question in the_questions:
+        print(question)
+        show_next_question(question)
 
 
 main()
