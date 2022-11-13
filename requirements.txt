@@ -1,53 +1,52 @@
-# build a quiz game
+# Build a quiz game (Space)
 
-#(Will do) requirements
+Requirments:
 
 1. Game intro
+
+    # Will Do:
+    - get user to input a name 
+    - User name to be no less than four letters
+
+
     #Stretch Goal:
-    - Enter user name (user to enter more than two letters)
-    - Game instructions
+    - Add game instructions
     - Count down sequence
     - Add emojis
 
 
+
 2. Start Game (show first question and show options "ansers")
+     # will Do:
+     - Display questions and answers
+     - give user a way to input answer
+
      #Stretch Goal:
      - Display questions in a random order.
      - Display ansers (A,B,C) or (1,2,3)
 
-     # will Do:
-     - give user a way to input answer
+
 
 
 3. Grade the users anser (compare users anser to the correct answer)
+    # Will Do:
+    - compare user and against correct answer
+    - Give the user a score for correct answer
+ 
+      #Stretch Goal:
+
+
 
 
 4. End game
+    # will Do:
+
+    #Stretch Goal:
  
 
 
-#Stretch Goals:
-
-1. Welcome message 
-game instructions
-enter user name (user to enter more than two letters)
-Count down sequence
-add emojis
-
-
-2. Display questions in a random order
-
-
-3. Give the user a message if answer is correct or incorrect
-
-
-4. Give user choice to play again or to end the game\
-
-
-
-
 # Sundays list of things to do. 
-. add usere instructions
+. add user instructions - DONE!!
 . create a list question questions and answers
 . display questions and answers
 . create an input for the user to answer question.
