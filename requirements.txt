@@ -10,15 +10,16 @@ Requirments:
 
 
     #Stretch Goal:
-    - Add game instructions
-    - Count down sequence
+    - Add game instructions / DONE
+    - Count down sequence / DONE
     - Add emojis
 
 
 
 2. Start Game (show first question and show options "ansers")
+
      # will Do:
-     - Display questions and answers
+     - Display questions and answers, one at a time.
      - give user a way to input answer
 
      #Stretch Goal:
@@ -29,6 +30,7 @@ Requirments:
 
 
 3. Grade the users anser (compare users anser to the correct answer)
+
     # Will Do:
     - compare user and against correct answer
     - Give the user a score for correct answer
@@ -39,6 +41,7 @@ Requirments:
 
 
 4. End game
+
     # will Do:
 
     #Stretch Goal:
