@@ -2,11 +2,11 @@
 
 Requirments:
 
-1. Game intro
+1. Game intro 
 
     # Will Do:
-    - get user to input a name 
-    - User name to be no less than four letters
+    - get user to input a name - DONE
+    - User name to be no less than four letters - DONE
 
 
     #Stretch Goal:
@@ -16,26 +16,31 @@ Requirments:
 
 
 
-2. Start Game (show first question and show options "ansers")
+2. Start Game 
 
-     # will Do:
-     - Display questions and answers, one at a time.
-     - give user a way to input answer
+    
+     
 
      #Stretch Goal:
      - Display questions in a random order.
      - Display ansers (A,B,C) or (1,2,3)
 
+3. Show next question (show first question and show options "ansers")
+
+    # will Do:
+    - Display questions and answers, one at a time. - DONE
+    - give user a way to input answer - DONE
 
 
-
-3. Grade the users anser (compare users anser to the correct answer)
+4. Grade the users anser (compare users anser to the correct answer)
 
     # Will Do:
-    - compare user and against correct answer
-    - Give the user a score for correct answer
+    - compare user and against correct answer (increment)
+    - Give the user a score for correct answer (correct or incorrect message)
  
       #Stretch Goal:
+      - add emoji for correct or incorrect
+      - 
 
 
 
@@ -48,9 +53,9 @@ Requirments:
  
 
 
-# Sundays list of things to do. 
+# list of things to do. 
 . add user instructions - DONE!!
-. create a list question questions and answers
-. display questions and answers
-. create an input for the user to answer question.
+. create a list question questions and answers - DONE
+. display questions and answers - DONE
+. create an input for the user to answer question. DONE
 . Increment answer. 
