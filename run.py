@@ -124,8 +124,8 @@ def main():
     for question in the_questions:  # why for loop here?
         show_next_question(question)
 
-    users_answer = input("Add your answers here!")
-    print("-------------------------------------")
+        users_answer = input("Add your answers here!")
+        print("-------------------------------------")
 
 
 main()
