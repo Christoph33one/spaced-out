@@ -80,8 +80,8 @@ def show_next_question(question):
     index = 1  # needs more input and questionsing!!
     print(index, question["text"])
     index += 1  # ???
-    # for choice in question["choices"]:  # why for loop here and not main?
-        # print(choice)
+    for choice in question["choices"]:  # why for loop here and not main?
+        print(choice)
 
 # def grade_answer(users_answer):
 
