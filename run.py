@@ -70,10 +70,12 @@ def users_name():
 def show_next_question(question):
     """
 
-    - Once function is called. the argument (question) from the list of questions (text:),
-    will be displayed to the user. 
+    - Once function is called. the argument (question) from the list of 
+    questions (text:),
+    will be displayed to the user.
 
-    - Once function is called, for loop to iritate through choices and question list until
+    - Once function is called, for loop to iritate through choices and 
+    question list until
     false (no more questions to show the user)
     """
 
