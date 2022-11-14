@@ -70,11 +70,11 @@ def users_name():
 def show_next_question(question):
     """
 
-    - Once function is called. the argument (question) from the list of 
+    - Once function is called. the argument (question) from the list of
     questions (text:),
     will be displayed to the user.
 
-    - Once function is called, for loop to iritate through choices and 
+    - Once function is called, for loop to iritate through choices and
     question list until
     false (no more questions to show the user)
     """
@@ -105,8 +105,8 @@ def main():
     timer count down sequence before game starts.
 
     - show_next_question =
-    for loop to get value from the_question list of questions. 
-    Then pass the value as an argument to the called function 
+    for loop to get value from the_question list of questions.
+    Then pass the value as an argument to the called function
     (show_next_question).
 
     - user_answer to run once question and choices have been displayed.

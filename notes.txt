@@ -18,12 +18,11 @@ Requirments:
 
 2. Start Game 
 
-    
-     
-
      #Stretch Goal:
      - Display questions in a random order.
      - Display ansers (A,B,C) or (1,2,3)
+
+
 
 3. Show next question (show first question and show options "ansers")
 
@@ -41,8 +40,6 @@ Requirments:
       #Stretch Goal:
       - add emoji for correct or incorrect
       - 
-
-
 
 
 4. End game
