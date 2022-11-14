@@ -85,8 +85,14 @@ def show_next_question(question):
     for choice in question["choices"]:  # why for loop here and not main?
         print(choice)
 
-# def grade_answer(users_answer):
 
+def grade_user_answer():
+    """
+    To take user answer and increment True or False
+    """
+
+
+grade_user_answer()
 
 
 def main():
@@ -105,7 +111,6 @@ def main():
 
     - user_answer to run once question and choices have been displayed.
     user to input their answer.
-
     """
     game_intro()
 
@@ -118,9 +123,8 @@ def main():
 
     for question in the_questions:  # why for loop here?
         show_next_question(question)
- 
-        # users_answer = input("Add your answers here!")
-       # print("-------------------------------------")
 
+    users_answer = input("Add your answers here!")
+    print("-------------------------------------")
 
 main()
