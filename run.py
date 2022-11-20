@@ -17,27 +17,59 @@ the_questions = [
 
         {
             "text": "How much do NASA space suits cost?",
-            "choices": ["12 millon dollars", "20 million dollars"],
-            "answer_index": 0,
+            "choices": ["A. 12 millon dollars", "B .20 million dollars"],
+            "correct_answer_index": "A",
         },
 
         {
             "text": "How many moons are in our solar system?",
-            "choices": ["100 moons", "181 moons"],
-            "anser_index": 1,
+            "choices": ["A. 100 moons", "B. 181 moons", "C.300 moons"],
+            "correct_anser_index": "B",
         },
 
         {
             "text": "Which is the brightest planet in the night sky?",
-            "choices": ["mars", "venus"],
-            "answer_index": 1,
+            "choices": ["A. mars", "B. venus", "C. Neptune"],
+            "correct_answer_index": "B",
         },
 
         {
             "text": "How long is one year on Jupiter?",
-            "choices": ["12 years", "8 years"],
-            "answer_index": 0,
+            "choices": ["A. 12 years", "B. 8 years", "C. 10 years"],
+            "correct_answer_index_": "A",
+        },
+        {
+            "text": "Which planet is closest in size to Earth?",
+            "choices": ["A. Mars?", "B.Venus?", "C.Mercuary"],
+            "correct_answer_index_": "B",
+        },
+        {
+            "text": "What planet is named after the Roman god of war?",
+            "choices": ["A. Saturn?", "B.venmus?", "C. Mars?"],
+            "correct_answer_index_": "C",
+        },
+        {
+            "text": "How many engines are on a space shuttle?",
+            "choices": ["A. Three?", "B. Two", "C. One?"],
+            "correct_answer_index_": "A",
+        },
+        {
+            "text": "What country put a man intp sapce first?",
+            "choices": ["A. Russia?", "B. USA?", "C. China?"],
+            "correct_answer_index_": "A",
+        },
+        {
+            "text": "What colour is the heat sheild facing the sun?",
+            "choices": ["A. black?", "B. White?", "C. Grey?"],
+            "correct_answer_index_": "B",
+        },
+        {
+            "text": "What contributes towards space being so dark?",
+            "choices": ["A. Not enough light?", "B. to big?", "C. A vacuum?"],
+            "correct_answer_index_": "C",
         }
+
+
     ]
 
 
@@ -60,11 +92,12 @@ def users_name():
     """
 
     while True:
-        name = input("PLEASE ENTER YOUR NAME:")
-        if len(name) < 4:
+        your_name = input("PLEASE ENTER YOUR NAME:")
+        print("-----------------------------------")
+        if len(your_name) < 4:
             print("ADD NO LESS THAN FOUR LETTERS!")
             continue
-        return name
+        return your_name
 
 
 def show_next_question(question):
@@ -78,21 +111,25 @@ def show_next_question(question):
     question list until
     false (no more questions to show the user)
     """
-
-    index = 1  # needs more input and questionsing!!
-    print(index, question["text"])
-    index += 1  # ???
-    for choice in question["choices"]:  # why for loop here and not main?
-        print(choice)
+    print(question["text"])
+    for choice in question["choices"]:
+        print(f"{choice}")
+    user_answer = input("enter answer here:")
 
 
-def grade_user_answer():
+def end_game(your_name):
     """
-    To take user answer and increment True or False
+    End if game function, gives user two options,
+    play again enter YES or press any key to exit game.
+    game will take user_name value to display with the end game message.
     """
-
-
-grade_user_answer()
+    print("That is the end of this game!")
+    print("-----------------------------------")
+    play_again = input("Enter YES to play again, or press any key to exit")
+    if play_again == "yes":
+        main()
+    else:
+        print("sorry:" + your_name, "Good bye and good luck!")
 
 
 def main():
@@ -121,11 +158,10 @@ def main():
         print(i)
         time.sleep(0.3)
 
-    for question in the_questions:  # why for loop here?
+    for question in the_questions:
         show_next_question(question)
 
-        users_answer = input("Add your answers here!")
-        print("-------------------------------------")
+    end_game(name)
 
 
 main()

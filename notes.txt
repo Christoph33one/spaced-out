@@ -2,7 +2,7 @@
 
 Requirments:
 
-1. Game intro 
+1. Game intro - DONE
 
     # Will Do:
     - get user to input a name - DONE
@@ -16,7 +16,7 @@ Requirments:
 
 
 
-2. Start Game 
+2. Start Game - DONE
 
      #Stretch Goal:
      - Display questions in a random order.
@@ -24,30 +24,36 @@ Requirments:
 
 
 
-3. Show next question (show first question and show options "ansers")
+3. Show next question (show first question and show options "ansers") - DONE
 
     # will Do:
-    - Display questions and answers, one at a time. - DONE
+    - Display questions and answers (x10 questions), one at a time. - DONE
     - give user a way to input answer - DONE
+
+     #Stretch Goal:
+     - Questions to be picked randomly from the list.
+     - Tell the user to a correct answer (A, B, or C).
 
 
 4. Grade the users anser (compare users anser to the correct answer)
 
     # Will Do:
-    - compare user and against correct answer (increment)
+    - compare user and against correct answer (increment) (look at javascript project for ideas maybe!!)
+    - give the user message if correct or incorrect
     - Give the user a score for correct answer (correct or incorrect message)
  
       #Stretch Goal:
       - add emoji for correct or incorrect
-      - 
+      
 
 
 4. End game
 
     # will Do:
+    - display end of game to the user. - DONE
 
     #Stretch Goal:
- 
+    - To give user an option to play again or end game. - DONE
 
 
 # list of things to do. 
@@ -55,4 +61,5 @@ Requirments:
 . create a list question questions and answers - DONE
 . display questions and answers - DONE
 . create an input for the user to answer question. DONE
-. Increment answer. 
+. Increment answer.
+. Add end of game function - DONE
