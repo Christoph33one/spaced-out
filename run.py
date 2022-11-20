@@ -20,19 +20,16 @@ the_questions = [
             "choices": ["A. 12 millon dollars", "B .20 million dollars"],
             "correct_answer_index": "A",
         },
-
         {
             "text": "How many moons are in our solar system?",
             "choices": ["A. 100 moons", "B. 181 moons", "C.300 moons"],
             "correct_anser_index": "B",
         },
-
         {
             "text": "Which is the brightest planet in the night sky?",
             "choices": ["A. mars", "B. venus", "C. Neptune"],
             "correct_answer_index": "B",
         },
-
         {
             "text": "How long is one year on Jupiter?",
             "choices": ["A. 12 years", "B. 8 years", "C. 10 years"],
@@ -68,8 +65,6 @@ the_questions = [
             "choices": ["A. Not enough light?", "B. to big?", "C. A vacuum?"],
             "correct_answer_index_": "C",
         }
-
-
     ]
 
 
@@ -114,7 +109,7 @@ def show_next_question(question):
     print(question["text"])
     for choice in question["choices"]:
         print(f"{choice}")
-    user_answer = input("enter answer here:")
+    user_answer = input("enter answer here:") # add user the correct input a,b
 
 
 def end_game(your_name):
