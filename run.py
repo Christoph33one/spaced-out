@@ -120,8 +120,8 @@ def end_game(your_name):
     """
     print("That is the end of this game!")
     print("-----------------------------------")
-    play_again = input("Enter YES to play again, or press any key to exit")
-    if play_again == "yes":
+    play_again = input("Enter Y to play again, or press any key to exit")
+    if play_again == "y":
         main()
     else:
         print("sorry:" + your_name, "Good bye and good luck!")

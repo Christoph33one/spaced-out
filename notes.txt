@@ -46,8 +46,7 @@ Requirments:
       - add emoji for correct or incorrect
       
 
-
-4. End game
+4. End game - DONE
 
     # will Do:
     - display end of game to the user. - DONE
@@ -61,5 +60,14 @@ Requirments:
 . create a list question questions and answers - DONE
 . display questions and answers - DONE
 . create an input for the user to answer question. DONE
+(undifined variable, user_answer.) use in grade answer function.
+. Add grade answer fucntion.
+. Aive user a correct or incorrect answer to each question, and a try again if incorrect answer is given!
 . Increment answer.
+
 . Add end of game function - DONE
+. Add more questions and asnwers - DONE
+. ADD emojis 
+. Look at README file and start adding more. 
+. Deploy to Heroku - DONE
+. Go thruogh errors and take notes for README file.
