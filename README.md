@@ -13,7 +13,7 @@ README MARK UP
 <li><a href="#user-experience ">User Experience</a></li>
 <li><a href="#future-features">Future features</a></li>
 <li><a href="#technologies">Technologies</a></li>
-<li><a href="#flow-chart">flow chart</a></li>
+<li><a href="#Design-input">flow chart</a></li>
 <li><a href="#testing">Testing</a></li>
 <li><a href="#deployment">Testing</a></li>
 <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -44,7 +44,7 @@ README MARK UP
 
 ---
 # Future features
-- Add more rounds to the game, the higher the round the harder the questions.
+- To add more levels to the game, the higher the level, the harder the questions.
 
 - Count down timer to answer all qustions before the game ends.
 
@@ -68,6 +68,11 @@ https://lucid.app/
 
 --- 
 
+# Design
+ 
+ - ADD SCREEN SHOTS FOR FLOW CHART
+---
+
 # Testing
 
 - For the testing purposes of this game, I used the internal PEP8 validation which is a build in validator in Gitpod.
@@ -90,21 +95,21 @@ TAKE PICTURE OF WORK SPACE ERRORS AND HO YOU RESLOVED THEM!!!!
 
 - In keeping with the rules of deployment with Code Institute, I had to deploy this project using Heruko. 
 
-- Creete an Heruko accounts linked to your email address.
+- Create a Heruko account linked to your email address.
 
-- Once logged in, create a new app which is placed in the top rught correct.
+- Once logged in, create a new app which is placed in the top right corner.
 
-- Within the new app, click settings scoll to (build packs)
+- Within new app, click settings and scoll to (build packs)
 
-- 4-Build packs let you select a choice of different technology's which you may be using to build a project. For my project I selected Python and Node JS. 
+- Build packs let you select a choice of different technology's which you may be using to build a project. For my project I selected Python and Node JS.
 
-- Node JS build pack is to run the template in which I have used to build my repository inn Github, supplied with code Institute. The Pythin build pack is tell Heruko what language I will be using to deploy.
+- Node JS build pack is to run the template in which I have used to build my repository in Github, supplied with code Institute. The Python build pack is to tell Heruko what language I will be using to deploy.
 
-- Link the App to your matching GitHub repository
+- Link the App to your matching GitHub repository.
 
-- Select Manual deploy
+- Open deployment from the same tool bar as to settings. Select Manual or Automatic  deployment (read details).
 
-- Open app in the top right corner 
+- At the bottom of the deployment page, select what branch you will be using. Click deploy branch and wait for the deployment to take place. Your add willm open in a new browser window.
 
  ADD SCREEN SHOTS OF DEPLOYMENT IN HERUKO!!!
 

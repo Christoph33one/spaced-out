@@ -62,7 +62,7 @@ Requirments:
 . create an input for the user to answer question. DONE
 (undifined variable, user_answer.) use in grade answer function.
 . Add grade answer fucntion.
-. Aive user a correct or incorrect answer to each question, and a try again if incorrect answer is given!
+. Give user a correct or incorrect answer to each question, and a try again if incorrect answer is given!
 . Increment answer.
 
 . Add end of game function - DONE

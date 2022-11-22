@@ -73,8 +73,11 @@ def game_intro():
     Game intro function.
     Shows then user a welcome message and game instructions.
     """
-    print("HELLO")
-    print("COMPARE YOUR KNOWLEDGE TO THE QUESTIONS, GOOD LUCK!👾 ")
+    print("WELCOME TO SPACED OUT!")
+    print("-----------------------------------------------------")
+    print("COMPARE YOUR KNOWLEDGE TO THE QUESTIONS ")
+    print("ANSWER A,B OR C..... GOOD LUCK!👾")
+    print("-----------------------------------------------------")
 
 
 def users_name():
@@ -87,15 +90,15 @@ def users_name():
     """
 
     while True:
-        your_name = input("PLEASE ENTER YOUR NAME:")
+        name = input("PLEASE ENTER YOUR NAME:")
         print("-----------------------------------")
-        if len(your_name) < 4:
+        if len(name) < 4:
             print("ADD NO LESS THAN FOUR LETTERS!")
             continue
-        return your_name
+        return name
 
 
-def show_next_question(question):
+def show_next_question(get_question):
     """
 
     - Once function is called. the argument (question) from the list of
@@ -106,13 +109,26 @@ def show_next_question(question):
     question list until
     false (no more questions to show the user)
     """
-    print(question["text"])
-    for choice in question["choices"]:
-        print(f"{choice}")
-    user_answer = input("enter answer here:") # add user the correct input a,b
+
+    for choice in get_question["choices"]:
+        print(choice)
+
+    while True:
+        users_answer = input("Add an answer here!")
+        if len(users_answer) > 1:
+            print("Please enter one Letter!")
+            continue
+        return users_answer
 
 
-def end_game(your_name):
+def get_user_answer():
+    """
+    Take users input,
+    Enter no more than one character.
+    """
+
+
+def end_game(name):
     """
     End if game function, gives user two options,
     play again enter YES or press any key to exit game.
@@ -120,11 +136,11 @@ def end_game(your_name):
     """
     print("That is the end of this game!")
     print("-----------------------------------")
-    play_again = input("Enter Y to play again, or press any key to exit")
+    play_again = input("Enter y to play again, or press any key to exit")
     if play_again == "y":
         main()
     else:
-        print("sorry:" + your_name, "Good bye and good luck!")
+        print("sorry:" + name, "Good bye and good luck!")
 
 
 def main():
@@ -153,8 +169,9 @@ def main():
         print(i)
         time.sleep(0.3)
 
-    for question in the_questions:
-        show_next_question(question)
+    for get_question in the_questions:
+        print(get_question["text"])
+        show_next_question(get_question)
 
     end_game(name)
 
