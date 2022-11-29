@@ -16,8 +16,8 @@ import time
 the_questions = [
 
         {
-            "text": "How much do NASA space suits cost?",
-            "choices": ["A. 12 millon dollars", "B .20 million dollars"],
+            "text": "Which is the densest planet in our solar system?",
+            "choices": ["A.Earth", "B.Jupiter", "C.Saturn."],
             "correct_answer_index": 0,
         },
         {
@@ -120,23 +120,29 @@ def show_next_question(current_question):
 def accept_user_answer():
     """
     Accepts user input and returns it.
+    User is instructed to enter A,B or C. For to continue,
+    until condition is true.
+    Returns user_answer value. User_answer to call the function,
+    in the main function.
     """
     while True:
         print("----------------------------------")
         users_answer = input("Add an answer here!").upper().strip()
 
-        if not users_answer in ["A","B","C"]:
+        if users_answer not in ["A", "B", "C"]:
             print(str("Please answer A, B or C!"))
             continue
         return users_answer
 
 
-def check_user_answer(question, answer_letter):
+def check_user_answer():
     """
-    To take user answer and validate it.
-    """
-    correct_answer_index = question["correct_anser_index"]
+    1.Take correct answer
+    2.To take user answer
+    3.Convert user answer(A,B,C) as a string and apply it to an,
+    int(correct_answer_index)
 
+    """
 
 
 def end_game(name):
@@ -145,10 +151,10 @@ def end_game(name):
     play again enter YES or press any key to exit game.
     game will take user_name value to display with the end game message.
     """
-    print("That is the end of this game!")
+    print("That is the end of this game!").lower().strip()
     print("-----------------------------------")
     play_again = input("Enter y to play again, or press any key to exit")
-    if play_again == "y":
+    if play_again == "y".lower():
         main()
     else:
         print("sorry:" + name, "Good bye and good luck!")
