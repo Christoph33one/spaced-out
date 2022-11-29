@@ -16,52 +16,52 @@ import time
 the_questions = [
 
         {
-            "text": "Which is the densest planet in our solar system?",
+            "text": "🌍Which is the densest planet in our solar system?",
             "choices": ["A.Earth", "B.Jupiter", "C.Saturn."],
             "correct_answer_index": 0,
         },
         {
-            "text": "How many moons are in our solar system?",
+            "text": "🌜How many moons are in our solar system?",
             "choices": ["A.100 moons", "B.181 moons", "C.300 moons"],
             "correct_anser_index": 1,
         },
         {
-            "text": "Which is the brightest planet in the night sky?",
+            "text": "⭐️Which is the brightest planet in the night sky?",
             "choices": ["A.mars", "B.Venus", "C. Neptune"],
             "correct_answer_index": 1,
         },
         {
-            "text": "How long is one year on Jupiter?",
+            "text": "⏱️How long is one year on Jupiter?",
             "choices": ["A.12 years", "B.8 years", "C.10 years"],
             "correct_answer_index_": 0,
         },
         {
-            "text": "Which planet is closest in size to Earth?",
+            "text": "📏Which planet is closest in size to Earth?",
             "choices": ["A.Mars?", "B.Venus?", "C.Mercuary"],
             "correct_answer_index_": 1,
         },
         {
-            "text": "What planet is named after the Roman god of war?",
+            "text": "🕎What planet is named after the Roman god of war?",
             "choices": ["A.Saturn?", "B.Venmus?", "C.Mars?"],
             "correct_answer_index_": 2,
         },
         {
-            "text": "How many engines are on a space shuttle?",
+            "text": "🚀How many engines are on a space shuttle?",
             "choices": ["A.Three?", "B.Two", "C.One?"],
             "correct_answer_index_": 0,
         },
         {
-            "text": "What country put a man intp sapce first?",
+            "text": "🇷🇺What country put a man intp sapce first?",
             "choices": ["A.Russia?", "B.USA?", "C.China?"],
             "correct_answer_index_": 0,
         },
         {
-            "text": "What colour is the heat sheild facing the sun?",
+            "text": "🛡️What colour is the heat sheild facing the sun?",
             "choices": ["A.Black?", "B.White?", "C.Grey?"],
             "correct_answer_index_": 1,
         },
         {
-            "text": "What contributes towards space being so dark?",
+            "text": "💡What contributes towards space being so dark?",
             "choices": ["A.Not enough light?", "B.To big?", "C.A vacuum?"],
             "correct_answer_index_": 2,
         }
@@ -73,7 +73,7 @@ def game_intro():
     Game intro function.
     Shows then user a welcome message and game instructions.
     """
-    print("WELCOME TO SPACED OUT!")
+    print("WELCOME TO SPACED OUT!🚀")
     print("----------------------------------------")
     print("YOUR MISSION:")
     print("COMPARE YOUR KNOWLEDGE AND ANSWER THE QUESTIONS ")
@@ -96,7 +96,7 @@ def users_name():
         name = input("PLEASE ENTER YOUR NAME:")
         print("-----------------------------------")
         if len(name) < 4:
-            print("ADD NO LESS THAN FOUR LETTERS!")
+            print("❗️ADD NO LESS THAN FOUR LETTERS!❗️")
             continue
         return name
 
@@ -130,12 +130,11 @@ def accept_user_answer():
         users_answer = input("Add an answer here!").upper().strip()
 
         if users_answer not in ["A", "B", "C"]:
-            print(str("Please answer A, B or C!"))
+            print(str("❗️Please answer A, B or C❗️"))
             continue
         return users_answer
 
-
-def check_user_answer():
+# def check_user_answer():
     """
     1.Take correct answer
     2.To take user answer
@@ -153,11 +152,12 @@ def end_game(name):
     """
     print("That is the end of this game!").lower().strip()
     print("-----------------------------------")
-    play_again = input("Enter y to play again, or press any key to exit")
+    play_again = input("❗️Enter y to play again, or press any key to exit❗️")
     if play_again == "y".lower():
         main()
     else:
         print("sorry:" + name, "Good bye and good luck!")
+        print("End of mission🏁")
 
 
 def main():
@@ -178,10 +178,9 @@ def main():
     user to input their answer.
     """
     game_intro()
-
     name = users_name()
     print(f"{name} Lets Begin!")
-    timer = "5 4 3 2 1"
+    timer = "5🪐 4👾 3🛸 2🔫 1🎇"
     for i in timer:
         print(i)
         time.sleep(0.3)
@@ -190,7 +189,7 @@ def main():
         print(current_question["text"])
         show_next_question(current_question)
         user_answer = accept_user_answer()
-        check_user_answer(current_question, user_answer)
+        # check_user_answer(current_question, user_answer)
 
     end_game(name)
 
