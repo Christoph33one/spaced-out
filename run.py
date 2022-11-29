@@ -18,52 +18,52 @@ the_questions = [
         {
             "text": "How much do NASA space suits cost?",
             "choices": ["A. 12 millon dollars", "B .20 million dollars"],
-            "correct_answer_index": "A",
+            "correct_answer_index": 0,
         },
         {
             "text": "How many moons are in our solar system?",
-            "choices": ["A. 100 moons", "B. 181 moons", "C.300 moons"],
-            "correct_anser_index": "B",
+            "choices": ["A.100 moons", "B.181 moons", "C.300 moons"],
+            "correct_anser_index": 1,
         },
         {
             "text": "Which is the brightest planet in the night sky?",
-            "choices": ["A. mars", "B. venus", "C. Neptune"],
-            "correct_answer_index": "B",
+            "choices": ["A.mars", "B.Venus", "C. Neptune"],
+            "correct_answer_index": 1,
         },
         {
             "text": "How long is one year on Jupiter?",
-            "choices": ["A. 12 years", "B. 8 years", "C. 10 years"],
-            "correct_answer_index_": "A",
+            "choices": ["A.12 years", "B.8 years", "C.10 years"],
+            "correct_answer_index_": 0,
         },
         {
             "text": "Which planet is closest in size to Earth?",
-            "choices": ["A. Mars?", "B.Venus?", "C.Mercuary"],
-            "correct_answer_index_": "B",
+            "choices": ["A.Mars?", "B.Venus?", "C.Mercuary"],
+            "correct_answer_index_": 1,
         },
         {
             "text": "What planet is named after the Roman god of war?",
-            "choices": ["A. Saturn?", "B.venmus?", "C. Mars?"],
-            "correct_answer_index_": "C",
+            "choices": ["A.Saturn?", "B.Venmus?", "C.Mars?"],
+            "correct_answer_index_": 2,
         },
         {
             "text": "How many engines are on a space shuttle?",
-            "choices": ["A. Three?", "B. Two", "C. One?"],
-            "correct_answer_index_": "A",
+            "choices": ["A.Three?", "B.Two", "C.One?"],
+            "correct_answer_index_": 0,
         },
         {
             "text": "What country put a man intp sapce first?",
-            "choices": ["A. Russia?", "B. USA?", "C. China?"],
-            "correct_answer_index_": "A",
+            "choices": ["A.Russia?", "B.USA?", "C.China?"],
+            "correct_answer_index_": 0,
         },
         {
             "text": "What colour is the heat sheild facing the sun?",
-            "choices": ["A. black?", "B. White?", "C. Grey?"],
-            "correct_answer_index_": "B",
+            "choices": ["A.Black?", "B.White?", "C.Grey?"],
+            "correct_answer_index_": 1,
         },
         {
             "text": "What contributes towards space being so dark?",
-            "choices": ["A. Not enough light?", "B. to big?", "C. A vacuum?"],
-            "correct_answer_index_": "C",
+            "choices": ["A.Not enough light?", "B.To big?", "C.A vacuum?"],
+            "correct_answer_index_": 2,
         }
     ]
 
@@ -74,10 +74,13 @@ def game_intro():
     Shows then user a welcome message and game instructions.
     """
     print("WELCOME TO SPACED OUT!")
-    print("-----------------------------------------------------")
-    print("COMPARE YOUR KNOWLEDGE TO THE QUESTIONS ")
-    print("ANSWER A,B OR C..... GOOD LUCK!👾")
-    print("-----------------------------------------------------")
+    print("----------------------------------------")
+    print("YOUR MISSION:")
+    print("COMPARE YOUR KNOWLEDGE AND ANSWER THE QUESTIONS ")
+    print("READ EACH QUESTION")
+    print("ANSWERING A,B OR C TO SEE HOW SMART YOU ARE")
+    print("GOOD LUCK!👾")
+    print("----------------------------------------")
 
 
 def users_name():
@@ -113,19 +116,21 @@ def show_next_question(get_question):
     for choice in get_question["choices"]:
         print(choice)
 
+
+def accept_user_answer():
+    """
+    Aaccepts user input and returns it.
+    """
     while True:
+        print("----------------------------------")
         users_answer = input("Add an answer here!")
         if len(users_answer) > 1:
-            print("Please enter one Letter!")
+            print("Please enter one Letter: A, B, or C!")
+            continue
+        if len(users_answer) < 1:
+            print(str("Please answer A, B or C!"))
             continue
         return users_answer
-
-
-def get_user_answer():
-    """
-    Take users input,
-    Enter no more than one character.
-    """
 
 
 def end_game(name):
@@ -157,7 +162,7 @@ def main():
     Then pass the value as an argument to the called function
     (show_next_question).
 
-    - user_answer to run once question and choices have been displayed.
+    - users_answer to run once question and choices have been displayed.
     user to input their answer.
     """
     game_intro()
@@ -172,6 +177,7 @@ def main():
     for get_question in the_questions:
         print(get_question["text"])
         show_next_question(get_question)
+        user_answer = accept_user_answer()
 
     end_game(name)
 

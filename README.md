@@ -1,10 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-README MARK UP
-
-
-
-# Space Quiz.
+# Space Quiz. 🚀
 
 👨🏻‍🚀 The Space  Quiz game is a short quiz on space travel. This quick quiz will test your space knowledge on planets, rocket science and space history. Don't worry about a count down sequence with this game, just take your time to answer as best as you can, enjoy!
 
@@ -13,7 +7,7 @@ README MARK UP
 <li><a href="#user-experience ">User Experience</a></li>
 <li><a href="#future-features">Future features</a></li>
 <li><a href="#technologies">Technologies</a></li>
-<li><a href="#Design-input">flow chart</a></li>
+<li><a href="#flowchart">Flowchart</a></li>
 <li><a href="#testing">Testing</a></li>
 <li><a href="#deployment">Testing</a></li>
 <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -68,7 +62,7 @@ https://lucid.app/
 
 --- 
 
-# Design
+# Flowchart
  
  - ADD SCREEN SHOTS FOR FLOW CHART
 ---

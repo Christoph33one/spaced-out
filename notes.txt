@@ -71,3 +71,27 @@ Requirments:
 . Look at README file and start adding more. 
 . Deploy to Heroku - DONE
 . Go thruogh errors and take notes for README file.
+
+
+
+# solve a way to track the users and and the index of question. 
+# compare users answer. 
+
+The solution to your problem is all here...
+
+
+1. create 2 global varaibles
+- 1st tracks the loop index (enumerate)
+- 2nd tracks the users answer
+
+2. in the loop, change it to an enumerate loop, and update the loop index inside it
+
+3. when the user answers a question, set the response in the global varaible
+
+4. when checking the answer, compare the users answers to the entry in the list of questions
+- the users guess --- the_questions[index][ord(user_guess)]
+- the answer it check -- the_questions[index]["correct_anser_index"]
+
+
+the_questions[index][ord(user_guess)]
+- the answer it check -- the_questions[index]["correct_anser_index"]
