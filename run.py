@@ -101,7 +101,7 @@ def users_name():
         return name
 
 
-def show_next_question(get_question):
+def show_next_question(current_question):
     """
 
     - Once function is called. the argument (question) from the list of
@@ -113,24 +113,30 @@ def show_next_question(get_question):
     false (no more questions to show the user)
     """
 
-    for choice in get_question["choices"]:
+    for choice in current_question["choices"]:
         print(choice)
 
 
 def accept_user_answer():
     """
-    Aaccepts user input and returns it.
+    Accepts user input and returns it.
     """
     while True:
         print("----------------------------------")
-        users_answer = input("Add an answer here!")
-        if len(users_answer) > 1:
-            print("Please enter one Letter: A, B, or C!")
-            continue
-        if len(users_answer) < 1:
+        users_answer = input("Add an answer here!").upper().strip()
+
+        if not users_answer in ["A","B","C"]:
             print(str("Please answer A, B or C!"))
             continue
         return users_answer
+
+
+def check_user_answer(question, answer_letter):
+    """
+    To take user answer and validate it.
+    """
+    correct_answer_index = question["correct_anser_index"]
+
 
 
 def end_game(name):
@@ -174,10 +180,11 @@ def main():
         print(i)
         time.sleep(0.3)
 
-    for get_question in the_questions:
-        print(get_question["text"])
-        show_next_question(get_question)
+    for current_question in the_questions:
+        print(current_question["text"])
+        show_next_question(current_question)
         user_answer = accept_user_answer()
+        check_user_answer(current_question, user_answer)
 
     end_game(name)
 

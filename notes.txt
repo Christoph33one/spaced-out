@@ -82,7 +82,7 @@ Requirments:
 . ADD emojis 
 . Look at README file and start adding more. (pictures)
 . Deploy to Heroku - DONE
-. Go thruogh errors and take notes for README file.
+. Go through errors and take notes for README file.
 
 
 THIS GOT ME CONFUSED!!!
