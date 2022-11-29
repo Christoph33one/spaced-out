@@ -12,6 +12,7 @@
 <li><a href="#deployment">Testing</a></li>
 <li><a href="#acknowledgments">Acknowledgments</a></li>
 <li><a href="#credits">Credits</a></li>
+
 ---
 # Design
 
@@ -21,20 +22,26 @@
 
 - I have used emoji's to give this game more of an inertative feel, I believe images are big part in making a game look and feel fun, which is the whole idea to a game.
 
-- Spaced Out isn't just about answering space questions, but also to the give user a bit more knowledge into space, space technology and space history.
+- Spaced Out isn't just about answering space questions, but also to the give the user a bit more knowledge into space, space technology and space history.
 
 --- 
 # User experience
 
-- Once the count sequence is over, a command to enter the players name will appear. Once a name for the user has been entered, the game will run through the basic instructions.
+- From the start of the game, a message will display an welcome message and some brief game instructions.
 
+ ![](assets/images/Screenshot%202022-11-29%20at%2023.09.30.png)
 
-- The game will now start and the questions will appear, followed by a small list of options so the user can guess and enter what they think is the correct anser.
+- Next is a user input method to enter a name. The name must be more than 4 letters to enter the game.
 
+![](assets/images/user%20name.png)
 
-- Once a question has been asnwered, the user will have to stay grounded as no correct or incorrect answer will be given until the end of the game.
+- Once the user has entered a name and pressed enter, a countdwon sequence with count down from 5. Then the first question will appear with a set of three choices, one of which is the correct answer. 
 
-- At the end of the game, the game will retieve all the answers the user had given, plus all the correct answers. This if for the user to check against the computer.
+![](assets/images/count%20down.png)
+
+- Once all questions have been answered, the user will be given a final score of how many they managed to answer correct.
+
+- End of game will give the user an option to replay by entering y, which returns to entering a name. Or to quite, enter n for the game to finish and take the user back to the very start.
 
 ---
 # Future features
