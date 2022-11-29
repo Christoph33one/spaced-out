@@ -28,31 +28,43 @@ Requirments:
 
     # will Do:
     - Display questions and answers (x10 questions), one at a time. - DONE
-    - give user a way to input answer - DONE
 
      #Stretch Goal:
      - Questions to be picked randomly from the list.
      - Tell the user to a correct answer (A, B, or C).
 
 
-4. Grade the users anser (compare users anser to the correct answer)
+4. Accpet user answer
 
     # Will Do:
+    - give user a way to input answer - DONE
     - compare user and against correct answer (increment) (look at javascript project for ideas maybe!!)
     - give the user message if correct or incorrect
     - Give the user a score for correct answer (correct or incorrect message)
  
       #Stretch Goal:
       - add emoji for correct or incorrect
+      - add if statments to only enter letters and only one letter - DONE
       
 
-4. End game - DONE
+5. Calcutale user answer (compare users anser to the correct answer)
+
+    # Will Do:
+    - Take user answer and valid it. (if statment)
+
+    #Stretch Goal:
+    - Give user a correct or incorrect message after each time the user answers a question (increment by 1)
+    - Add a score at the end of the game
+
+6. End game - DONE
 
     # will Do:
     - display end of game to the user. - DONE
 
     #Stretch Goal:
     - To give user an option to play again or end game. - DONE
+    - If yes, start game from name input
+    - If no, return to start of game
 
 
 # list of things to do. 
@@ -61,22 +73,19 @@ Requirments:
 . display questions and answers - DONE
 . create an input for the user to answer question. DONE
 (undifined variable, user_answer.) use in grade answer function.
-. Add grade answer fucntion.
+. Add grade answer fucntion 
 . Give user a correct or incorrect answer to each question, and a try again if incorrect answer is given!
 . Increment answer.
 
 . Add end of game function - DONE
 . Add more questions and asnwers - DONE
 . ADD emojis 
-. Look at README file and start adding more. 
+. Look at README file and start adding more. (pictures)
 . Deploy to Heroku - DONE
 . Go thruogh errors and take notes for README file.
 
 
-
-# solve a way to track the users and and the index of question. 
-# compare users answer. 
-
+THIS GOT ME CONFUSED!!!
 The solution to your problem is all here...
 
 
