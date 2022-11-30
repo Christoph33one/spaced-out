@@ -35,11 +35,13 @@
 
     ![](assets/images/user%20name.png)
 
-- Once the user has entered a name and pressed enter, a countdwon sequence with count down from 5.
+- Once the user has entered a name and pressed enter, a countdown sequence with count down from 5.
 
     ![](assets/images/count%20down.png)
 
 - Then the first question will appear with a set of three choices, one of which is the correct answer. 
+
+- User to then enter an answer bofore the next question is shown.
 
     ![](assets/images/questions%20and%20asnswers.png)
 

@@ -16,7 +16,7 @@ import time
 the_questions = [
 
         {
-            "text": "🌍\n Which is the densest planet in our solar system?",
+            "text": "🌍 Which is the densest planet in our solar system?",
             "choices": ["A.Earth", "B.Jupiter", "C.Saturn."],
             "correct_answer_index": 0,
         },
@@ -71,7 +71,8 @@ the_questions = [
 def game_intro():
     """
     Game intro function.
-    Shows then user a welcome message and game instructions.
+    Shows the user a welcome message and game instructions.
+    Function called in main function.
     """
     print("WELCOME TO SPACED OUT!🚀")
     print("----------------------------------------")
@@ -86,15 +87,16 @@ def game_intro():
 
 def users_name():
     """
-    Function gives the user n input method
-    User to enter their name for game to start
+    Function gives the user an input method.
+    User to enter their name for game to start.
     while condition (enter a minimum of four letters for a name)
-    is True, loop will break, count down sequence
-    (game starts).
+    is True, loop will break, value is retured to function
+    Count down sequence (game starts).
+    Countdown called in main function.
     """
 
     while True:
-        name = input("PLEASE ENTER YOUR NAME:").upper()
+        name = input("PLEASE ENTER YOUR NAME:").upper().strip()
         print("-----------------------------------")
         if len(name) < 4:
             print("❗️ ADD NO LESS THAN FOUR LETTERS!❗️")
@@ -135,14 +137,21 @@ def accept_user_answer():
             continue
         return users_answer
 
-# def check_user_answer():
 
-    # 1.Take correct answer
-    # 2.To take user answer
-    # 3.Convert user answer(A,B,C) as a string and apply it to an,
-    # int(correct_answer_index)
+def check_user_answer(current_question, user_answer):
+    """
+    1. get correct answer.
+    2. Get users answer.
+    3. Validate user answer .
+    """
 
-# """
+    correct_answer = current_question["correct_answer_index"]
+    answer = user_answer
+    if answer == correct_answer:
+        print("correct answer!")
+    else:
+        print(f"wrong!, the answer is: {correct_answer}")
+    return
 
 
 def end_game(name):
@@ -151,14 +160,14 @@ def end_game(name):
     play again enter YES or press any key to exit game.
     game will take user_name value to display with the end game message.
     """
-    print("That is the end of this game!").lower().strip()
+    print("That is the end of this game!")
     print("-----------------------------------")
-    play_again = input("❗️ Enter y to play again, or press any key to exit ❗️")
-    if play_again == "y".lower():
+    play_again = input("Enter y to play again, or press any key to exit").lower()
+    if play_again == "y":
         main()
     else:
         print("sorry:" + name, "Good bye and good luck!")
-        print("End of mission🏁")
+        print("End of mission")
 
 
 def main():
@@ -171,12 +180,13 @@ def main():
     timer count down sequence before game starts.
 
     - show_next_question =
-    for loop to get value from the_question list of questions.
-    Then pass the value as an argument to the called function
-    (show_next_question).
-
-    - users_answer to run once question and choices have been displayed.
-    user to input their answer.
+    Current question to take value of questions,
+    in the get_question dictionary.
+    For loop to irritate through key value ("text"), print question,
+    to the user.
+    show_next_question function to take current question as an argument, 
+    then pass value to this function. For loop to display question choices.
+    Function called in main function.
     """
     game_intro()
 
@@ -187,11 +197,12 @@ def main():
         print(i)
         time.sleep(0.3)
 
-    for get_question in the_questions:
-        print(get_question["text"])
-        show_next_question(get_question)
+    for current_question in the_questions:
+        print(current_question["text"])
+        show_next_question(current_question)
         user_answer = accept_user_answer()
-        # check_user_answer(current_question, user_answer)
+        check_user_answer(current_question, user_answer)
+
     end_game(name)
 
 
