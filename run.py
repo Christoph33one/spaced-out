@@ -138,15 +138,19 @@ def accept_user_answer():
         return users_answer
 
 
-# def check_user_answer(current_question, user_answer):
-    # """
-    # 1. get correct answer
-    # 2. get user answer
-    # 3. validate user answer
-    # """
-    # correct_anser_index = current_question["correct_answer_index"]
-    # answer = users_answer
-    # if answer == user_answer
+def check_user_answer(current_question, users_answer):
+    """
+    1. get correct answer
+    2. get user answer
+    3. validate user answer
+    """
+
+    correct_answer_index = current_question["correct_answer_index"]
+    answer = users_answer
+    if users_answer == current_question["correct_answer_index"]:
+        print("correct answer!")
+    else:
+        print(f"wrong!, the answer is: {correct_answer_index}")
 
 
 def end_game(name):
@@ -195,8 +199,8 @@ def main():
     for current_question in the_questions:
         print(current_question["text"])
         show_next_question(current_question)
-        users_answer = accept_user_answer()
-        # check_user_answer(current_question, users_answer)
+        users_answer = ord(accept_user_answer())
+        check_user_answer(current_question, users_answer)
 
     end_game(name)
 
