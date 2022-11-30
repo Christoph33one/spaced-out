@@ -33,37 +33,37 @@ the_questions = [
         {
             "text": "⏱️ How long is one year on Jupiter?",
             "choices": ["A.12 years", "B.8 years", "C.10 years"],
-            "correct_answer_index_": 0,
+            "correct_answer_index": 0,
         },
         {
             "text": "📏 Which planet is closest in size to Earth?",
             "choices": ["A.Mars", "B.Venus", "C.Mercuary"],
-            "correct_answer_index_": 1,
+            "correct_answer_index": 1,
         },
         {
             "text": "🕎 What planet is named after the Roman god of war?",
             "choices": ["A.Saturn", "B.Venmus", "C.Mars"],
-            "correct_answer_index_": 2,
+            "correct_answer_index": 2,
         },
         {
             "text": "🚀\n How many engines are on a space shuttle?",
             "choices": ["A.Three", "B.Two", "C.One"],
-            "correct_answer_index_": 0,
+            "correct_answer_index": 0,
         },
         {
             "text": "🇷🇺 What country put a man intp sapce first?",
             "choices": ["A.Russia", "B.USA", "C.China"],
-            "correct_answer_index_": 0,
+            "correct_answer_index": 0,
         },
         {
             "text": "🛡️ What colour is the heat sheild facing the sun?",
             "choices": ["A.Black", "B.White", "C.Grey"],
-            "correct_answer_index_": 1,
+            "correct_answer_index": 1,
         },
         {
             "text": "💡 What contributes towards space being so dark?",
             "choices": ["A.Not enough light", "B.To big", "C.A vacuum"],
-            "correct_answer_index_": 2,
+            "correct_answer_index": 2,
         }
     ]
 
@@ -138,20 +138,15 @@ def accept_user_answer():
         return users_answer
 
 
-def check_user_answer(current_question, user_answer):
-    """
-    1. get correct answer.
-    2. Get users answer.
-    3. Validate user answer .
-    """
-
-    correct_answer = current_question["correct_answer_index"]
-    answer = user_answer
-    if answer == correct_answer:
-        print("correct answer!")
-    else:
-        print(f"wrong!, the answer is: {correct_answer}")
-    return
+# def check_user_answer(current_question, user_answer):
+    # """
+    # 1. get correct answer
+    # 2. get user answer
+    # 3. validate user answer
+    # """
+    # correct_anser_index = current_question["correct_answer_index"]
+    # answer = users_answer
+    # if answer == user_answer
 
 
 def end_game(name):
@@ -162,7 +157,7 @@ def end_game(name):
     """
     print("That is the end of this game!")
     print("-----------------------------------")
-    play_again = input("Enter y to play again, or press any key to exit").lower()
+    play_again = input("Enter y to play again, or press any key to exit")
     if play_again == "y":
         main()
     else:
@@ -184,7 +179,7 @@ def main():
     in the get_question dictionary.
     For loop to irritate through key value ("text"), print question,
     to the user.
-    show_next_question function to take current question as an argument, 
+    show_next_question function to take current question as an argument,
     then pass value to this function. For loop to display question choices.
     Function called in main function.
     """
@@ -200,8 +195,8 @@ def main():
     for current_question in the_questions:
         print(current_question["text"])
         show_next_question(current_question)
-        user_answer = accept_user_answer()
-        check_user_answer(current_question, user_answer)
+        users_answer = accept_user_answer()
+        # check_user_answer(current_question, users_answer)
 
     end_game(name)
 
