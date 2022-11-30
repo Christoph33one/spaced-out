@@ -29,20 +29,26 @@
 
 - From the start of the game, a message will display an welcome message and some brief game instructions.
 
- ![](assets/images/Screenshot%202022-11-29%20at%2023.09.30.png)
+    ![](assets/images/Screenshot%202022-11-29%20at%2023.09.30.png)
 
 - Next is a user input method to enter a name. The name must be more than 4 letters to enter the game.
 
-![](assets/images/user%20name.png)
+    ![](assets/images/user%20name.png)
 
-- Once the user has entered a name and pressed enter, a countdwon sequence with count down from 5. Then the first question will appear with a set of three choices, one of which is the correct answer. 
+- Once the user has entered a name and pressed enter, a countdwon sequence with count down from 5.
 
-![](assets/images/count%20down.png)
+    ![](assets/images/count%20down.png)
+
+- Then the first question will appear with a set of three choices, one of which is the correct answer. 
+
+    ![](assets/images/questions%20and%20asnswers.png)
 
 - Once all questions have been answered, the user will be given a final score of how many they managed to answer correct.
+ADD A FINAL SCORE PICTURE HERE!!!!!!!
 
 - End of game will give the user an option to replay by entering y, which returns to entering a name. Or to quite, enter n for the game to finish and take the user back to the very start.
 
+ADD END OF GAME PICTURE HERE!!!!!!!!
 ---
 # Future features
 - To add more levels to the game, the higher the level, the harder the questions.
@@ -71,7 +77,10 @@ https://lucid.app/
 
 # Flowchart
  
- - ADD SCREEN SHOTS FOR FLOW CHART
+ - For the planing and management of this project, I used a workflow constructor called Lucid Spark. By mapping out the game function, this helped in keeping the build process up to date with what each function is achieving and to give clear instructions on the next task. 
+ https://lucid.app
+
+    ![](assets/images/flow%20chart.png)
 ---
 
 # Testing
@@ -97,23 +106,30 @@ TAKE PICTURE OF WORK SPACE ERRORS AND HO YOU RESLOVED THEM!!!!
 - In keeping with the rules of deployment with Code Institute, I had to deploy this project using Heruko. 
 
 - Create a Heruko account linked to your email address.
+    ![](assets/images/heruko%20log%20in.png)
 
 - Once logged in, create a new app which is placed in the top right corner.
+    ![](assets/images/new%20app%20heruko.png)
 
 - Within new app, click settings and scoll to (build packs)
+![](assets/images/build%20packs%20heruko.png)
 
 - Build packs let you select a choice of different technology's which you may be using to build a project. For my project I selected Python and Node JS.
 
 - Node JS build pack is to run the template in which I have used to build my repository in Github, supplied with code Institute. The Python build pack is to tell Heruko what language I will be using to deploy.
 
-- Link the App to your matching GitHub repository.
+- If you are using an external source for data or an API, please add the key and port in the Config var section. (Please read the instructions given!)
 
-- Open deployment from the same tool bar as to settings. Select Manual or Automatic  deployment (read details).
+- At the top of the page, Open deployment from the same tool bar as to settings. Scroll down to the deployment method and select GitHub. From here you will be asked to authorise that Heruko linkd to your GitHub repository. 
+    ![](assets/images/deployment%20method%20heruko.png)
 
-- At the bottom of the deployment page, select what branch you will be using. Click deploy branch and wait for the deployment to take place. Your add willm open in a new browser window.
+- Next you should notice that Heruko has now linked to GitHub, to retrieve data.
 
- ADD SCREEN SHOTS OF DEPLOYMENT IN HERUKO!!!
+- From bottom of the deployment page, please select what branch (main) you will be using. Click deploy branch and wait for the deployment to take place. Your app will open in a new browser window once deployed.
+    ![](assets/images/deployment%20heruko.png)
 
+- Click to view deployed app. 
+    ![](assets/images/deployed%20app%20heruko.png)
 --- 
 
 # Acknowledgments 

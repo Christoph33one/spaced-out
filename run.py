@@ -97,7 +97,7 @@ def users_name():
         name = input("PLEASE ENTER YOUR NAME:").upper()
         print("-----------------------------------")
         if len(name) < 4:
-            print("❗️ADD NO LESS THAN FOUR LETTERS!❗️")
+            print("❗️ ADD NO LESS THAN FOUR LETTERS!❗️")
             continue
         return name
 
@@ -131,7 +131,7 @@ def accept_user_answer():
         users_answer = input("Add an answer here!").upper().strip()
 
         if users_answer not in ["A", "B", "C"]:
-            print(str("Please answer A, B or C"))
+            print(str("❗️ Please answer A, B or C ❗️"))
             continue
         return users_answer
 
@@ -153,7 +153,7 @@ def end_game(name):
     """
     print("That is the end of this game!").lower().strip()
     print("-----------------------------------")
-    play_again = input("Enter y to play again, or press any key to exit")
+    play_again = input("❗️ Enter y to play again, or press any key to exit ❗️")
     if play_again == "y".lower():
         main()
     else:
@@ -192,7 +192,6 @@ def main():
         show_next_question(get_question)
         user_answer = accept_user_answer()
         # check_user_answer(current_question, user_answer)
-
     end_game(name)
 
 
