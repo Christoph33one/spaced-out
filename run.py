@@ -16,54 +16,54 @@ import time
 the_questions = [
 
         {
-            "text": "🌍 Which is the densest planet in our solar system?",
+            "text": "🌍 Which is the most densest planet in our solar system?",
             "choices": ["A.Earth", "B.Jupiter", "C.Saturn."],
-            "correct_answer_index": 0,
+            "correct_answer_index": "A",
         },
         {
             "text": "🌜 How many moons are in our solar system?",
             "choices": ["A.100 moons", "B.181 moons", "C.300 moons"],
-            "correct_anser_index": 1,
+            "correct_answer_index": "B",
         },
         {
             "text": "⭐️ Which is the brightest planet in the night sky?",
             "choices": ["A.mars", "B.Venus", "C. Neptune"],
-            "correct_answer_index": 1,
+            "correct_answer_index": "B",
         },
         {
-            "text": "⏱️ How long is one year on Jupiter?",
+            "text": "⏱️ How long is one earth year on Jupiter?",
             "choices": ["A.12 years", "B.8 years", "C.10 years"],
-            "correct_answer_index": 0,
+            "correct_answer_index": "A",
         },
         {
             "text": "📏 Which planet is closest in size to Earth?",
             "choices": ["A.Mars", "B.Venus", "C.Mercuary"],
-            "correct_answer_index": 1,
+            "correct_answer_index": "B",
         },
         {
             "text": "🕎 What planet is named after the Roman god of war?",
             "choices": ["A.Saturn", "B.Venmus", "C.Mars"],
-            "correct_answer_index": 2,
+            "correct_answer_index": "C",
         },
         {
             "text": "🚀\n How many engines are on a space shuttle?",
             "choices": ["A.Three", "B.Two", "C.One"],
-            "correct_answer_index": 0,
+            "correct_answer_index": "A",
         },
         {
-            "text": "🇷🇺 What country put a man intp sapce first?",
+            "text": "🇷🇺 What country put a man into sapce first?",
             "choices": ["A.Russia", "B.USA", "C.China"],
-            "correct_answer_index": 0,
+            "correct_answer_index": "A",
         },
         {
-            "text": "🛡️ What colour is the heat sheild facing the sun?",
+            "text": "🛡️ What colour is the heat sheild when facing sun?",
             "choices": ["A.Black", "B.White", "C.Grey"],
-            "correct_answer_index": 1,
+            "correct_answer_index": "B",
         },
         {
             "text": "💡 What contributes towards space being so dark?",
             "choices": ["A.Not enough light", "B.To big", "C.A vacuum"],
-            "correct_answer_index": 2,
+            "correct_answer_index": "C",
         }
     ]
 
@@ -144,13 +144,12 @@ def check_user_answer(current_question, users_answer):
     2. get user answer
     3. validate user answer
     """
-
-    correct_answer_index = current_question["correct_answer_index"]
-    answer = users_answer
     if users_answer == current_question["correct_answer_index"]:
         print("correct answer!")
+        return True
     else:
-        print(f"wrong!, the answer is: {correct_answer_index}")
+        print("Wrong Answer!")
+        return False
 
 
 def end_game(name):
@@ -196,12 +195,15 @@ def main():
         print(i)
         time.sleep(0.3)
 
+    score = 0
     for current_question in the_questions:
         print(current_question["text"])
         show_next_question(current_question)
-        users_answer = ord(accept_user_answer())
-        check_user_answer(current_question, users_answer)
-
+        users_answer = accept_user_answer()
+        correct = check_user_answer(current_question, users_answer)
+        if correct:
+            score += 1
+    print("Score is", score)
     end_game(name)
 
 
