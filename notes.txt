@@ -2,69 +2,64 @@
 
 Requirments:
 
-1. Game intro - DONE
+1. Game intro / DONE
 
     # Will Do:
-    - get user to input a name - DONE
-    - User name to be no less than four letters - DONE
-
+    - Display game instructions to the user before starting the game / DONE
 
     #Stretch Goal:
-    - Add game instructions / DONE
     - Count down sequence / DONE
-    - Add emojis
+    - Add images / DONE
 
 
+2. Users Name: / DONE
 
-2. Start Game - DONE
+    # Will Do:
+    - get user to input a name / DONE
+    - User name to be no less than four letters / DONE
 
-     #Stretch Goal:
-     - Display questions in a random order.
-     - Display ansers (A,B,C) or (1,2,3)
-
-
-
-3. Show next question (show first question and show options "ansers") - DONE
+    
+3. Show next question (show first question and show options "answers") / DONE
 
     # will Do:
-    - Display questions and answers (x10 questions), one at a time. - DONE
-
-     #Stretch Goal:
-     - Questions to be picked randomly from the list.
-     - Tell the user to a correct answer (A, B, or C).
+    - Display questions and answers (x10 questions), one at a time. / DONE
+    
+    #Stretch Goal:
+    - Questions to be picked randomly from the list.
 
 
 4. Accpet user answer
 
     # Will Do:
-    - give user a way to input answer - DONE
-    - compare user and against correct answer (increment) (look at javascript project for ideas maybe!!)
-    - give the user message if correct or incorrect
-    - Give the user a score for correct answer (correct or incorrect message)
- 
-      #Stretch Goal:
-      - add emoji for correct or incorrect
-      - add if statments to only enter letters and only one letter - DONE
-      
-
-5. Calcutale user answer (compare users anser to the correct answer)
-
-    # Will Do:
-    - Take user answer and valid it. (if statment)
+    - Give user a way to input answer / DONE
+    - Add upperclass and strip methods to input / DONE
 
     #Stretch Goal:
-    - Give user a correct or incorrect message after each time the user answers a question (increment by 1)
-    - Add a score at the end of the game
+    - Add emoji for correct or incorrect
+    - Add if statments to only enter letters and only one letter - DONE
+      
+
+5. Check user answer(compare users anser to the correct answer)
+
+    # Will Do:
+    - Take user answer and valid it. (if / esle statment)
+    - Compare users answer against the correct answer / DONE
+    - Give the user message if correct or incorrect / DONE
+
+    #Stretch Goal: 
+    - Add a score at the end of the game (increment by 1) / DONE
+    - Add emoji’s to answer message
+
 
 6. End game - DONE
 
-    # will Do:
+    # Will Do:
     - display end of game to the user. - DONE
 
     #Stretch Goal:
     - To give user an option to play again or end game. - DONE
-    - If yes, start game from name input
-    - If no, return to start of game
+    - If yes, start game from enter name / DONE
+    - If no, return to start of game / DONE
 
 
 # list of things to do. 
@@ -73,7 +68,7 @@ Requirments:
 . display questions and answers - DONE
 . create an input for the user to answer question. DONE
 (undifined variable, user_answer.) use in grade answer function.
-. Add grade answer fucntion 
+. Add grade answer function 
 . Give user a correct or incorrect answer to each question, and a try again if incorrect answer is given!
 . Increment answer.
 
@@ -83,24 +78,3 @@ Requirments:
 . Look at README file and start adding more. (pictures)
 . Deploy to Heroku - DONE
 . Go through errors and take notes for README file.
-
-
-THIS GOT ME CONFUSED!!!
-The solution to your problem is all here...
-
-
-1. create 2 global varaibles
-- 1st tracks the loop index (enumerate)
-- 2nd tracks the users answer
-
-2. in the loop, change it to an enumerate loop, and update the loop index inside it
-
-3. when the user answers a question, set the response in the global varaible
-
-4. when checking the answer, compare the users answers to the entry in the list of questions
-- the users guess --- the_questions[index][ord(user_guess)]
-- the answer it check -- the_questions[index]["correct_anser_index"]
-
-
-the_questions[index][ord(user_guess)]
-- the answer it check -- the_questions[index]["correct_anser_index"]

@@ -1,16 +1,3 @@
-"""
-
-    GAME NOTES
-step 1. add a start game meassage.
-step 2. Show game intsructions.
-step 3. user to input name.
-step 4. count down sequence and game starts.
-step 5. show first question. needs imporving!!
-step 6. show choices.
-step 7. user to inout correct answer.
-"""
-
-
 import time
 
 the_questions = [
@@ -18,52 +5,52 @@ the_questions = [
         {
             "text": "🌍 Which is the most densest planet in our solar system?",
             "choices": ["A.Earth", "B.Jupiter", "C.Saturn."],
-            "correct_answer_index": "A",
+            "correct_answer": "A",
         },
         {
             "text": "🌜 How many moons are in our solar system?",
             "choices": ["A.100 moons", "B.181 moons", "C.300 moons"],
-            "correct_answer_index": "B",
+            "correct_answer": "B",
         },
         {
             "text": "⭐️ Which is the brightest planet in the night sky?",
             "choices": ["A.mars", "B.Venus", "C. Neptune"],
-            "correct_answer_index": "B",
+            "correct_answer": "B",
         },
         {
             "text": "⏱️ How long is one earth year on Jupiter?",
             "choices": ["A.12 years", "B.8 years", "C.10 years"],
-            "correct_answer_index": "A",
+            "correct_answer": "A",
         },
         {
             "text": "📏 Which planet is closest in size to Earth?",
             "choices": ["A.Mars", "B.Venus", "C.Mercuary"],
-            "correct_answer_index": "B",
+            "correct_answer": "B",
         },
         {
             "text": "🕎 What planet is named after the Roman god of war?",
             "choices": ["A.Saturn", "B.Venmus", "C.Mars"],
-            "correct_answer_index": "C",
+            "correct_answer": "C",
         },
         {
             "text": "🚀\n How many engines are on a space shuttle?",
             "choices": ["A.Three", "B.Two", "C.One"],
-            "correct_answer_index": "A",
+            "correct_answer": "A",
         },
         {
             "text": "🇷🇺 What country put a man into sapce first?",
             "choices": ["A.Russia", "B.USA", "C.China"],
-            "correct_answer_index": "A",
+            "correct_answer": "A",
         },
         {
             "text": "🛡️ What colour is the heat sheild when facing sun?",
             "choices": ["A.Black", "B.White", "C.Grey"],
-            "correct_answer_index": "B",
+            "correct_answer": "B",
         },
         {
             "text": "💡 What contributes towards space being so dark?",
             "choices": ["A.Not enough light", "B.To big", "C.A vacuum"],
-            "correct_answer_index": "C",
+            "correct_answer": "C",
         }
     ]
 
@@ -78,9 +65,10 @@ def game_intro():
     print("----------------------------------------")
     print("YOUR MISSION:")
     print("-------------")
-    print("COMPARE YOUR KNOWLEDGE AND ANSWER THE QUESTIONS ")
-    print("READ EACH QUESTION")
-    print("ANSWERING A,B OR C TO SEE HOW SMART YOU ARE")
+    print("LETS TEST YOUR SPACE KNOWLEDGE")
+    print("READ EACH OF THE 10 QUESTIONS")
+    print("ANSWERING A,B OR C")
+    print("LETS SEE IF YOU CAN GET ALL THE QUESTIONS CORRECT!")
     print("GOOD LUCK!👾")
     print("----------------------------------------")
 
@@ -130,25 +118,31 @@ def accept_user_answer():
     """
     while True:
         print("----------------------------------")
-        users_answer = input("Add an answer here!").upper().strip()
+        users_answer = input("Enter Answer!").upper().strip()
 
         if users_answer not in ["A", "B", "C"]:
             print(str("❗️ Please answer A, B or C ❗️"))
+            print("------------------------------")
             continue
         return users_answer
 
 
 def check_user_answer(current_question, users_answer):
     """
-    1. get correct answer
-    2. get user answer
-    3. validate user answer
+    Passing the vlaue of the current question and the user answer,
+    into the function.
+    The with an if statement, to compare the users answer to the correct,
+    answer in the correct answer index.
+    Return a bolean of true or false with each out come.
     """
-    if users_answer == current_question["correct_answer_index"]:
-        print("correct answer!")
+
+    if users_answer == current_question["correct_answer"]:
+        print("Good that's correct!")
+        print("---------------")
         return True
     else:
-        print("Wrong Answer!")
+        print("Sorry that's wrong!")
+        print("-------------")
         return False
 
 
@@ -160,7 +154,7 @@ def end_game(name):
     """
     print("That is the end of this game!")
     print("-----------------------------------")
-    play_again = input("Enter y to play again, or press any key to exit")
+    play_again = input("Enter y play again, or press any key to exit")
     if play_again == "y":
         main()
     else:
@@ -191,6 +185,7 @@ def main():
     name = users_name()
     print(f"{name} Lets Begin!")
     timer = "5🪐 4👾 3🛸 2🌏 1🎇"
+    print("------------------")
     for i in timer:
         print(i)
         time.sleep(0.3)
@@ -203,7 +198,7 @@ def main():
         correct = check_user_answer(current_question, users_answer)
         if correct:
             score += 1
-    print("Score is", score)
+    print("Your score is", score)
     end_game(name)
 
 
