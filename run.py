@@ -198,7 +198,7 @@ def main():
         correct = check_user_answer(current_question, users_answer)
         if correct:
             score += 1
-    print("Your score is", score)
+    print("Your score out of 10 is:", score)
     end_game(name)
 
 
