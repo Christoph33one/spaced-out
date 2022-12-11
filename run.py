@@ -1,58 +1,6 @@
 import time
 
-the_questions = [
-
-        {
-            "text": "🌍 Which is the most densest planet in our solar system?",
-            "choices": ["A.Earth", "B.Jupiter", "C.Saturn."],
-            "correct_answer": "A",
-        },
-        {
-            "text": "🌜 How many moons are in our solar system?",
-            "choices": ["A.100 moons", "B.181 moons", "C.300 moons"],
-            "correct_answer": "B",
-        },
-        {
-            "text": "⭐️ Which is the brightest planet in the night sky?",
-            "choices": ["A.mars", "B.Venus", "C. Neptune"],
-            "correct_answer": "B",
-        },
-        {
-            "text": "⏱️ How long is one earth year on Jupiter?",
-            "choices": ["A.12 years", "B.8 years", "C.10 years"],
-            "correct_answer": "A",
-        },
-        {
-            "text": "📏 Which planet is closest in size to Earth?",
-            "choices": ["A.Mars", "B.Venus", "C.Mercuary"],
-            "correct_answer": "B",
-        },
-        {
-            "text": "🕎 What planet is named after the Roman god of war?",
-            "choices": ["A.Saturn", "B.Venmus", "C.Mars"],
-            "correct_answer": "C",
-        },
-        {
-            "text": "🚀\n How many engines are on a space shuttle?",
-            "choices": ["A.Three", "B.Two", "C.One"],
-            "correct_answer": "A",
-        },
-        {
-            "text": "🇷🇺 What country put a man into sapce first?",
-            "choices": ["A.Russia", "B.USA", "C.China"],
-            "correct_answer": "A",
-        },
-        {
-            "text": "🛡️ What colour is the heat sheild when facing sun?",
-            "choices": ["A.Black", "B.White", "C.Grey"],
-            "correct_answer": "B",
-        },
-        {
-            "text": "💡 What contributes towards space being so dark?",
-            "choices": ["A.Not enough light", "B.To big", "C.A vacuum"],
-            "correct_answer": "C",
-        }
-    ]
+from questions import the_questions
 
 
 def game_intro():
@@ -77,8 +25,8 @@ def users_name():
     """
     Function gives the user an input method.
     User to enter their name for game to start.
-    while condition (enter a minimum of four letters for a name)
-    is True, loop will break, value is retured to function
+    While condition is true (enter a minimum of four letters for a name)
+    or loop will continue.
     Count down sequence (game starts).
     Countdown called in main function.
     """
@@ -94,14 +42,11 @@ def users_name():
 
 def show_next_question(current_question):
     """
+    For loop in the main function to irrate through key values ("text")
+    to display the current question.
 
-    - Once function is called. the argument (question) from the list of
-    questions (text:),
-    will be displayed to the user.
-
-    - Once function is called, for loop to iritate through choices and
-    question list until
-    false (no more questions to show the user)
+    For loop to irrate through choices in the current_question
+    to display chcices, key value ("choices")
     """
 
     for choice in current_question["choices"]:
@@ -110,11 +55,11 @@ def show_next_question(current_question):
 
 def accept_user_answer():
     """
-    Accepts user input and returns it.
-    User is instructed to enter A,B or C. For to continue,
-    until condition is true.
-    Returns user_answer value. User_answer to call the function,
-    in the main function.
+    Accepts user input and returns it if condition is true.
+    (User is instructed to enter A,B or C) else continue loop.
+
+    Then returns user_answer in the main function, once the function
+    is called.
     """
     while True:
         print("----------------------------------")
@@ -129,11 +74,11 @@ def accept_user_answer():
 
 def check_user_answer(current_question, users_answer):
     """
-    Passing the vlaue of the current question and the user answer,
+    Passing the value of the current question and the user answer
     into the function.
-    The with an if statement, to compare the users answer to the correct,
-    answer in the correct answer index.
-    Return a bolean of true or false with each out come.
+    The with if statement to compare the users answer to the correct
+    answer in the correct answer dictionary
+    Return a bolean of true or false depending on the users answer.
     """
 
     if users_answer == current_question["correct_answer"]:

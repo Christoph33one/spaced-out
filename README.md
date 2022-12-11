@@ -91,21 +91,34 @@ https://lucid.app/
 
  THAKE PICURE OF ERROR TRERMINAL IN WORKSPACE !!!!!!
 
-- The game has been tested on both Google Chrome and Safari in which the game funcions efficiently.
+- The project has been tested on both Google Chrome and Safari in which the game funcions efficiently.
 
 --- 
 
-# Bugs
+# Bugs & Error handling 
 
-- In the build process of this game, I ran multiple error checks throughout the markup as to keeping a 
+- In the build process of this game, I ran multiple error checks throughout as to keeping a constant update on fixing and documenting errors. 
 
-TAKE PICTURE OF WORK SPACE ERRORS AND HO YOU RESLOVED THEM!!!!
+- ERROR - White spaces
+- SOLUTION - Using the backspace key to clear all white spaces with the mark up
+
+- ERROR - Wrong indentation with a For loop in the main function.
+- SOLUTION - I used a Python Formator to check that when creating a for loop, that the indentation matches what to what the formator shows to clear all indentation erros.
+    https://www.w3schools.com/python/gloss_python_indentation.asp
+
+- ERROR - Adding an incorrect argument into the show next question function. 
+- SOLUTION - I wanted to show the user each question from a key's value. In doing so, I created a for loop to irritate through a dictationary of keys and their values. 
+When calling the show next question function in the main function, I had trouble working out the correct value I want to pass as an argument. After reviewing my code and with some online help, I managed to pass the correct value to the called function to show the key's values.
+
+- ERROR - ADDING A COUNT DOWN TIMER
+- SOLUTION - When creating a count down timer, I did not import time. As a result, the functionality of the timer would give an error. Once I had used (import time), the timer function worked as expected.
 
 ---
-
 # Deployment 
 
 - In keeping with the rules of deployment with Code Institute, I had to deploy this project using Heruko. 
+
+- Go to the following webpage: https://id.heroku.com/login
 
 - Create a Heruko account linked to your email address.
     ![](assets/images/heruko%20log%20in.png)
@@ -118,37 +131,37 @@ TAKE PICTURE OF WORK SPACE ERRORS AND HO YOU RESLOVED THEM!!!!
 
 - Build packs let you select a choice of different technology's which you may be using to build a project. For my project I selected Python and Node JS.
 
-- Node JS build pack is to run the template in which I have used to build my repository in Github, supplied with code Institute. The Python build pack is to tell Heruko what language I will be using to deploy.
+- Node JS build pack is to run the template which I have used to build my repository in Github, supplied with code Institute. The Python build pack is to tell Heruko what language was used and what will to deploy.
 
 - If you are using an external source for data or an API, please add the key and port in the Config var section. (Please read the instructions given!)
 
-- At the top of the page, Open deployment from the same tool bar as to settings. Scroll down to the deployment method and select GitHub. From here you will be asked to authorise that Heruko linkd to your GitHub repository. 
+- At the top of the page, Open deployment from the same tool bar as to settings. Scroll down to the deployment method and select GitHub. From here you will be asked to authorise that Heruko will link to your GitHub repository. 
     ![](assets/images/deployment%20method%20heruko.png)
 
 - Next you should notice that Heruko has now linked to GitHub, to retrieve data.
 
-- From bottom of the deployment page, please select what branch (main) you will be using. Click deploy branch and wait for the deployment to take place. Your app will open in a new browser window once deployed.
+- From the bottom of the deployment page, please select what branch (main) you will be using. Click deploy branch and wait for the deployment to take place. Heruko will start showing a build log, this log is part of the deployment process and will also show any errors if your project is not deployed correctly. Once deployed, you app will open in a new browser window.
     ![](assets/images/deployment%20heruko.png)
 
-- Click to view deployed app. 
+- Click to view the deployed app. 
     ![](assets/images/deployed%20app%20heruko.png)
 --- 
 
 # Acknowledgments 
-- To get the game questions and answers I usesa Google search to see what options I had. I found a great and easy site to copy from.
+- To get the game questions and answers I used a Google search to see what options I had. I found a great and easy site to copy from.
 https://quizglobal.com/quizplay/quizplayqanda/Space%20Quiz%20Questions%20and%20Answers
 
-- When writing my Python mark up the work space, I used W3 Schools and Python starter to clear some of the functions and syntax for this project.
+- When writing my Python mark up in Github, I used W3 Schools and Python starter help me write some of the correct syntax and methods used in this project.
 https://www.w3schools.com/python/
 https://www.python.org/about/gettingstarted/
 
-- I used Youtube as a good way for explaining and adding each function to write for this game as I was unsure from the start. 
+- With the help of my mentor, I used a good template to plan out what needed to be achieved first and what could be added in later updates. This is very effective way to achieve the main objective first.
 
 # Credits
-- I would like to say a thank you to Code Institute for giving me the tools to build my 3rd project and also my first project using Pyhton.
+- I would like to say a thank you to Code Institute for giving me the tools to build my 3rd milestone project and also my first project using Pyhton.
 
 - A big thank you to my mentor for keeping me on track with the build stages and giving me valuable advise with key areas.
 
-- The slack community has been a great help when I needed it the most, so a thank you to all that answered my qustions and guided me in the process.
+- The Slack community has been a great help when I needed it the most, so a thank you to all that answered my qustions and guided me in the process to build the project.
 
 
