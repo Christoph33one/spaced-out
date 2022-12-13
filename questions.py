@@ -33,12 +33,12 @@ the_questions = [
             "text": "⏱️ How long is one Earth year on Jupiter?",
             "choices": ["A.12 years", "B.8 years", "C.10 years"],
             "correct_answer": "A",
-            "infornation": "Jupiter is almost 12 times bigger than Earth"
+            "infornation": "Jupiter is almost 12 times bigger than Earth\n"
             "but that's not the reason to why it takes 12 years to orbit the\n"
-            "sun. Compared to Earth, Juipter is a lot further away from the/n"
-            "sun, so it takes longer to do a full cycle. A day on Jupiter is\n"
-            "much quicker than Earth tho, one day on Jupiter only takes 10\n"
-            "hours."
+            "sun. Compared to Earth, Juipter is a lot further away from/n"
+            "the sun, so it takes longer to do a full cycle. A day on\n"
+            "Juipter is much quicker than Earth tho, one day on Jupiter only\n"
+            "takes 10 hours."
         },
         {
             "text": "📏 Which planet is closest in size to Earth?",
