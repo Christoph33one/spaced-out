@@ -18,7 +18,7 @@ the_questions = [
             "correct_answer": "B",
             "infornation": "Moons are like mini planets, they are the\n"
             "leftover pieces from the birth of a planet. They can\n"
-            "have a vital part in how a planet exists, such as Earth"
+            "have a vital part in how a planet exists, such as Earth."
         },
         {
             "text": "⭐️ Which is the brightest planet in the night sky?",
@@ -33,19 +33,19 @@ the_questions = [
             "text": "⏱️ How long is one Earth year on Jupiter?",
             "choices": ["A.12 years", "B.8 years", "C.10 years"],
             "correct_answer": "A",
-            "infornation": "Jupiter is almost 12 times bigger than Earth\n"
-            "but that's not the reason to why it takes 12 years to orbit the\n"
-            "sun. Compared to Earth, Juipter is a lot further away from/n"
-            "the sun, so it takes longer to do a full cycle. A day on\n"
-            "Juipter is much quicker than Earth tho, one day on Jupiter only\n"
-            "takes 10 hours."
+            "infornation": "Jupiter is almost 12 times bigger than\n"
+            "Earhh. But that's not the reason to why it takes 12 years\n"
+            "to orbit the sun. Compared to Earth, Juipter is a lot further\n"
+            "away from the sun, so it takes longer to do a full cycle.\n"
+            "A day on Juipter is much quicker than Earth tho,\n"
+            "one day on Jupiter only takes 10 hours."
         },
         {
             "text": "📏 Which planet is closest in size to Earth?",
             "choices": ["A.Mars", "B.Venus", "C.Mercuary"],
             "correct_answer": "B",
-            "infornation": "If you have ever heard the saying, Earth's twin\n"
-            "than you can think of Venus. Due to it's size and structure\n"
+            "infornation": "If you have ever heard the saying, Earth's twin.\n"
+            "Than you can think of Venus. Due to it's size and structure\n"
             "Venus in almost the same size as out planet."
         },
         {
@@ -62,17 +62,17 @@ the_questions = [
             "choices": ["A.Three", "B.Two", "C.One"],
             "correct_answer": "A",
             "infornation": "These engines are the main engines connected\n"
-            "to the shuttle. They used a liquid fuel classed as cryogenic\n"
-            "The engines produce an equivalent of about 37 million horsepower"
-            "and an exhaust temperature of 3000 degrees"
+            "to the shuttle. They used a liquid fuel, classed as cryogenic.\n"
+            "The engines produce an equivalent of about 37 million\n"
+            "horsepower and an exhaust temperature of 3000 degrees."
         },
         {
             "text": "🇷🇺 What country put a man into space first?",
             "choices": ["A.Russia", "B.USA", "C.China"],
             "correct_answer": "A",
-            "infornation": "Cosmonaut Yury A. Gagarin\n"
-            "was the first Russan and also the first man ever to go to space\n"
-            "On the 12 April 1961, Yury A. Gagarin did one full orbit\n"
+            "infornation": "Cosmonaut Yury A. Gagarin,\n"
+            "was the first Russan and also the first man ever to go into\n"
+            "space. On the 12 April 1961, Yury A. Gagarin did one full orbit\n"
             "around the earth and then returned home"
         },
         {
@@ -80,15 +80,15 @@ the_questions = [
             "choices": ["A.Black", "B.White", "C.Grey"],
             "correct_answer": "B",
             "infornation": "The white colour helps deflect the harmful\n"
-            "rays of radiation and heat from the Sun, back into space\n"
+            "rays of radiation and heat from the Sun, back into space.\n"
             "The black heat sheild is only for re-entry purposes and is\n"
-            "black from using carbon tiles as a heat proof material source"
+            "black from using carbon tiles as a heat proof material source."
         },
         {
             "text": "💡 What contributes towards space being so dark?",
             "choices": ["A.Not enough light", "B.To big", "C.A vacuum"],
             "correct_answer": "C",
-            "infornation": "As space is a vacuum, there is no atmosphere\n"
+            "infornation": "As space is a vacuum, there is no atmosphere.\n"
             "Due to this, there are no small particles in space to reflect\n"
             "light. Even particles as small as gas are enough to create a\n"
             "well lit up environment like here on Earth."
