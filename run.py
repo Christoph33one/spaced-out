@@ -82,10 +82,12 @@ def check_user_answer(current_question, users_answer):
     """
     if users_answer == current_question["correct_answer"]:
         print("That's correct!")
+        print(current_question["infornation"])
         print("---------------")
         return True
     else:
         print("Sorry that's wrong!")
+        print(current_question["infornation"])
         print("-------------")
         return False
 
