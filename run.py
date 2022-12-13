@@ -64,6 +64,7 @@ def accept_user_answer():
     while True:
         print("----------------------------------")
         users_answer = input("Enter Answer!").upper().strip()
+        print("----------------------------------")
 
         if users_answer not in ["A", "B", "C"]:
             print(str("❗️ Please answer A, B or C ❗️"))
