@@ -84,10 +84,12 @@ def check_user_answer(current_question, users_answer):
         print("That's correct!")
         print(current_question["infornation"])
         print("---------------")
+        print("---------------")
         return True
     else:
         print("Sorry that's wrong!")
         print(current_question["infornation"])
+        print("-------------")
         print("-------------")
         return False
 
@@ -145,6 +147,7 @@ def main():
         if correct:
             score += 1
             print("Your score out of 10 is:", score)
+            print("-------------------------------")
             print("-------------------------------")
     end_game(name)
 
