@@ -145,6 +145,7 @@ def main():
         if correct:
             score += 1
             print("Your score out of 10 is:", score)
+            print("-------------------------------")
     end_game(name)
 
 
