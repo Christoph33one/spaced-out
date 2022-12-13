@@ -8,11 +8,13 @@ the_questions = [
             "text": "🌍 Which is the most densest planet in our solar system?",
             "choices": ["A.Earth", "B.Jupiter", "C.Saturn."],
             "correct_answer": "A",
+
         },
         {
             "text": "🌜 How many moons are in our solar system?",
             "choices": ["A.100 moons", "B.181 moons", "C.300 moons"],
             "correct_answer": "B",
+
         },
         {
             "text": "⭐️ Which is the brightest planet in the night sky?",

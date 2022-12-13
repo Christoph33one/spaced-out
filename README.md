@@ -1,6 +1,6 @@
-# Space Quiz. 🚀
+# Spaced Out. 🚀
 
-👨🏻‍🚀 The Space  Quiz game is a short quiz on space travel. This quick quiz will test your space knowledge on planets, rocket science and space history. Don't worry about a count down sequence with this game, just take your time to answer as best as you can, enjoy!
+👨🏻‍🚀 Spaced Out is a short quiz on space travel. This quick quiz will test your space knowledge on planets, rocket science and space history. Just take your time to answer as best as you can, enjoy and good luck!
 
 # List of contents
 <li><a href="#design ">Design</a></li>

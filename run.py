@@ -76,13 +76,12 @@ def check_user_answer(current_question, users_answer):
     """
     Passing the value of the current question and the user answer
     into the function.
-    The with if statement to compare the users answer to the correct
+    The if statement is to compare the users answer to the correct
     answer in the correct answer dictionary
     Return a bolean of true or false depending on the users answer.
     """
-
     if users_answer == current_question["correct_answer"]:
-        print("Good that's correct!")
+        print("That's correct!")
         print("---------------")
         return True
     else:
@@ -143,7 +142,7 @@ def main():
         correct = check_user_answer(current_question, users_answer)
         if correct:
             score += 1
-    print("Your score out of 10 is:", score)
+            print("Your score out of 10 is:", score)
     end_game(name)
 
 
