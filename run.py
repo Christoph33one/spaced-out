@@ -27,7 +27,7 @@ def users_name():
     User to enter their name for game to start.
     While condition is true (enter a minimum of four letters for a name)
     or loop will continue.
-    Count down sequence (game starts).
+    Countdown sequence (game starts).
     Countdown called in main function.
     """
 
@@ -42,11 +42,11 @@ def users_name():
 
 def show_next_question(current_question):
     """
-    For loop in the main function to irrate through key values ("text")
+    For loop in the main function to iterate through key values ("text")
     to display the current question.
 
-    For loop to irrate through choices in the current_question
-    to display chcices, key value ("choices")
+    For loop to iterate through choices in the current_question
+    to display choices, key value ("choices")
     """
 
     for choice in current_question["choices"]:
@@ -78,20 +78,20 @@ def check_user_answer(current_question, users_answer):
     Passing the value of the current question and the user answer
     into the function.
 
-    The if statement is to compare the users answer to the correct
+    The if statement is to compare the user's answer to the correct
     answer in the correct answer dictionary.
 
     Return a bolean of true or false depending on the users answer.
     """
     if users_answer == current_question["correct_answer"]:
         print("That's correct!")
-        print(current_question["infornation"])
+        print(current_question["information"])
         print("-----------------------------")
         print("-----------------------------")
         return True
     else:
         print("Sorry that's wrong!")
-        print(current_question["infornation"])
+        print(current_question["information"])
         print("-----------------------------")
         return False
 
@@ -109,7 +109,7 @@ def end_game(name):
         main()
     else:
         print("Sorry:" + name, "Good bye and good luck!")
-        print("End of mission 🎇 🚀 👾 🛸 🪐")
+        print("End of a mission 🎇 🚀 👾 🛸 🪐")
 
 
 def main():
@@ -117,19 +117,19 @@ def main():
     To execute all game functions by calling each function and
     any arguments that may be in the function call.
 
-    1. Current question to take a question from the dictionary of questions.
+    1. Current_question to take a question from the dictionary of questions.
 
     2. Show next question to take current_question and the key (text)
     from the dictionary of questions, then display a question and the choices
     (key: value).
 
-    3.users_answer to take the users choice and call it in the
+    3.users_answer to take the user's choice and call it in the
     accept_user_answer function.
 
-    4.local variable (correct) to call the check_user_anser function
+    4.local variable (correct) to call the check_user_answer function
     and increment score by 1 and to give a point for the correct answer.
 
-    5. end_game fucntion to take users name (name) and end the game
+    5. end_game function to take users name (name) and end the game
 
 
     """
