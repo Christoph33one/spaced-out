@@ -16,46 +16,51 @@
 ---
 # Design
 
-- For the design aspect of this game I wanted the user to be involved from the start and to have inputs to enter the game.
+- For the design aspect of this game I wanted the user to be involved from the start and to have a command  to enter their name.
 
 - As this is a quiz about space, I wanted to incorporate some ideas which can relate to rockets, so I added a countdown sequence at the very start.
 
-- I have used emoji's to give this game more of an inertative feel, I believe images are big part in making a game look and feel fun, which is the whole idea to a game.
+- I have used emoji's to give this game more of an interactive feel, I believe images are big part in making a game look and feel fun, which is the whole idea of a game.
 
-- Spaced Out isn't just about answering space questions, but also to the give the user a bit more knowledge into space, space technology and space history.
+- Spaced Out isn't just about answering space questions, but also to the give the user a bit more knowledge into space, space technology and space history. After the user answers a question correct or incorrect, a short piece of information about the question and the correct answer will appear. This is the educational part for the user to learn a bit more about space. 
 
 --- 
 # User experience
 
-- From the start of the game, a message will display an welcome message and some brief game instructions.
+- From the start of the game, a welcome message and game instructions will appear.
 
     ![](assets/images/Screenshot%202022-11-29%20at%2023.09.30.png)
 
-- Next is a user input method to enter a name. The name must be more than 4 letters to enter the game.
+- Next the user must enter a name. The user has to choose a name with more than four letters or the game will not start.
 
     ![](assets/images/user%20name.png)
 
-- Once the user has entered a name and pressed enter, a countdown sequence with count down from 5.
+- Once the user has entered a name and pressed enter, a countdown sequence will count down from 5.
 
     ![](assets/images/count%20down.png)
 
 - Then the first question will appear with a set of three choices, one of which is the correct answer. 
 
-- User to then enter an answer bofore the next question is shown.
+    ![](assets/images/answer%20info.png)
 
-    ![](assets/images/questions%20and%20asnswers.png)
+- The user must aways answer A, B or c. If not then an error message will appear and give the user a chance to enter a once again.
 
-- Once all questions have been answered, the user will be given a final score of how many they managed to answer correct.
-ADD A FINAL SCORE PICTURE HERE!!!!!!!
+    ![](assets/images/error%20message%20for%20correct%20answer.png)
 
-- End of game will give the user an option to replay by entering y, which returns to entering a name. Or to quite, enter n for the game to finish and take the user back to the very start.
+- After each question has been answered, a message will display if the user got a correct or incorrect answer. If correct, a score of 1 piont will be added. The user can then see how many questions they have correct and to compare against the list of 10 questions.
 
-ADD END OF GAME PICTURE HERE!!!!!!!!
+    ![](assets/images/adding%20score%20to%20correct%20question.png)
+
+- Once all the questions have been answered, the user will be given a final score of how many they managed to answer correct.
+
+- At the end of game, the user will be given an option to replay by entering y, which returns to entering a new name, or to quite the game by  entering any key. This takes the user back to the very start.
+
+    ![](assets/images/end%20of%20game%20score.png)
 ---
 # Future features
 - To add more levels to the game, the higher the level, the harder the questions.
 
-- Count down timer to answer all qustions before the game ends.
+- A count down timer to answer all qustions before the game ends.
 
 - Randomise questions.
 
@@ -82,14 +87,14 @@ https://lucid.app/
  - For the planing and management of this project, I used a workflow constructor called Lucid Spark. By mapping out the game function, this helped in keeping the build process up to date with what each function is achieving and to give clear instructions on the next task. 
  https://lucid.app
 
-    ![](assets/images/flow%20chart.png)
+    ![](assets/images/new%20flowchart.png)
 ---
 
 # Testing
 
 - For the testing purposes of this game, I used the internal PEP8 validation which is a build in validator in Gitpod.
 
- THAKE PICURE OF ERROR TRERMINAL IN WORKSPACE !!!!!!
+    ![](assets/images/pep8%20validator.png)
 
 - The project has been tested on both Google Chrome and Safari in which the game funcions efficiently.
 
@@ -97,21 +102,26 @@ https://lucid.app/
 
 # Bugs & Error handling 
 
-- In the build process of this game, I ran multiple error checks throughout as to keeping a constant update on fixing and documenting errors. 
-
+- In the build process of this game. I ran multiple error checks throughout, as to keeping  constant updates on handling and documenting errors. 
+---
 - ERROR - White spaces
-- SOLUTION - Using the backspace key to clear all white spaces with the mark up
-
+- SOLUTION - Using the backspace key to clear all white spaces within the mark up.
+---
 - ERROR - Wrong indentation with a For loop in the main function.
-- SOLUTION - I used a Python Formator to check that when creating a for loop, that the indentation matches what to what the formator shows to clear all indentation erros.
+- SOLUTION - I used a Python Formator to check that when creating a for loop, the indentation matches the formator and clears the error.
     https://www.w3schools.com/python/gloss_python_indentation.asp
-
+---
 - ERROR - Adding an incorrect argument into the show next question function. 
-- SOLUTION - I wanted to show the user each question from a key's value. In doing so, I created a for loop to irritate through a dictationary of keys and their values. 
-When calling the show next question function in the main function, I had trouble working out the correct value I want to pass as an argument. After reviewing my code and with some online help, I managed to pass the correct value to the called function to show the key's values.
-
+- SOLUTION - I wanted to show the user each question from a dictionary by retrieving a key value. In doing so, I created a for loop to irritate through the dictationary of keys and their values. 
+When calling the show next question function in the main function, I had trouble working out the correct value I wanted to pass as an argument. After reviewing my code and with some online help, I managed to pass the correct value (argument) to the called function to show the user a question.
+---
 - ERROR - ADDING A COUNT DOWN TIMER
 - SOLUTION - When creating a count down timer, I did not import time. As a result, the functionality of the timer would give an error. Once I had used (import time), the timer function worked as expected.
+---
+- ERROR - An error in the build log for when deploying this project to Heruko.
+- SOLUTION - Once going over the documention in Heruko, I realised that I had to add a requiremts.txt as a file in my workspace. Once this file was in place, I then had to enter the following command in the terminal of my work space. 
+( pip freeze > requirements.txt ) 
+After running this command, I had to git add, commit and push my project before deploying with Heruko once more.
 
 ---
 # Deployment 
@@ -124,6 +134,7 @@ When calling the show next question function in the main function, I had trouble
     ![](assets/images/heruko%20log%20in.png)
 
 - Once logged in, create a new app which is placed in the top right corner.
+
     ![](assets/images/new%20app%20heruko.png)
 
 - Within new app, click settings and scoll to (build packs)
@@ -131,7 +142,7 @@ When calling the show next question function in the main function, I had trouble
 
 - Build packs let you select a choice of different technology's which you may be using to build a project. For my project I selected Python and Node JS.
 
-- Node JS build pack is to run the template which I have used to build my repository in Github, supplied with code Institute. The Python build pack is to tell Heruko what language was used and what will to deploy.
+- Node JS build pack is to run the template which I have used to build my repository in Github, supplied with code Institute. The Python build pack is to tell Heruko what language was used and what will be deploy.
 
 - If you are using an external source for data or an API, please add the key and port in the Config var section. (Please read the instructions given!)
 
@@ -155,7 +166,7 @@ https://quizglobal.com/quizplay/quizplayqanda/Space%20Quiz%20Questions%20and%20A
 https://www.w3schools.com/python/
 https://www.python.org/about/gettingstarted/
 
-- With the help of my mentor, I used a good template to plan out what needed to be achieved first and what could be added in later updates. This is very effective way to achieve the main objective first.
+- With the help of my mentor, I used a good template to plan out what needed to be achieved first and what could be added in later updates. This was a very effective way to achieve the main objectives first.
 
 # Credits
 - I would like to say a thank you to Code Institute for giving me the tools to build my 3rd milestone project and also my first project using Pyhton.

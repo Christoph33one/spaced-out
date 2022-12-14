@@ -25,16 +25,16 @@ the_questions = [
             "choices": ["A.Mars", "B.Venus", "C.Neptune"],
             "correct_answer": "B",
             "infornation": "Venus has a scary and hot atmosphere, due to\n"
-            "being so close to the sun, It's atmosphere contains many thick\n"
-            "clouds of dust, which reflect sunlight, making it look so\n"
-            "bright in nights sky."
+            "being so close to the sun. It's atmosphere contains many thick\n"
+            "clouds of dust, which reflect sunlight. Making it look so\n"
+            "bright in night sky."
         },
         {
             "text": "⏱️ How long is one Earth year on Jupiter?",
             "choices": ["A.12 years", "B.8 years", "C.10 years"],
             "correct_answer": "A",
             "infornation": "Jupiter is almost 12 times bigger than\n"
-            "Earhh. But that's not the reason to why it takes 12 years\n"
+            "Earth. But that's not the reason to why it takes 12 years\n"
             "to orbit the sun. Compared to Earth, Juipter is a lot further\n"
             "away from the sun, so it takes longer to do a full cycle.\n"
             "A day on Juipter is much quicker than Earth tho,\n"
@@ -46,7 +46,7 @@ the_questions = [
             "correct_answer": "B",
             "infornation": "If you have ever heard the saying, Earth's twin.\n"
             "Than you can think of Venus. Due to it's size and structure\n"
-            "Venus in almost the same size as out planet."
+            "Venus in almost the same size as our planet."
         },
         {
             "text": "🕎 What planet is named after the Roman god of war?",

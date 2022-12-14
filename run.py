@@ -77,8 +77,10 @@ def check_user_answer(current_question, users_answer):
     """
     Passing the value of the current question and the user answer
     into the function.
+
     The if statement is to compare the users answer to the correct
-    answer in the correct answer dictionary
+    answer in the correct answer dictionary.
+
     Return a bolean of true or false depending on the users answer.
     """
     if users_answer == current_question["correct_answer"]:
@@ -91,7 +93,6 @@ def check_user_answer(current_question, users_answer):
         print("Sorry that's wrong!")
         print(current_question["infornation"])
         print("-----------------------------")
-        print("-----------------------------")
         return False
 
 
@@ -99,35 +100,38 @@ def end_game(name):
     """
     End if game function, gives user two options,
     play again enter YES or press any key to exit game.
-    game will take user_name value to display with the end game message.
+    Game will take user_name value (name) to display with the end game message.
     """
     print("That is the end of this game!")
     print("-----------------------------------")
-    play_again = input("Enter y play again, or press any key to exit")
+    play_again = input("Enter y to play again, or press any key to exit")
     if play_again == "y":
         main()
     else:
-        print("sorry:" + name, "Good bye and good luck!")
-        print("End of mission")
+        print("Sorry:" + name, "Good bye and good luck!")
+        print("End of mission 🎇 🚀 👾 🛸 🪐")
 
 
 def main():
     """
+    To execute all game functions by calling each function and
+    any arguments that may be in the function call.
 
-    - Main function to run all game functions.
+    1. Current question to take a question from the dictionary of questions.
 
-    - Game_intro =
-    Print users name, display game instructions,
-    timer count down sequence before game starts.
+    2. Show next question to take current_question and the key (text)
+    from the dictionary of questions, then display a question and the choices
+    (key: value).
 
-    - show_next_question =
-    Current question to take value of questions,
-    in the get_question dictionary.
-    For loop to irritate through key value ("text"), print question,
-    to the user.
-    show_next_question function to take current question as an argument,
-    then pass value to this function. For loop to display question choices.
-    Function called in main function.
+    3.users_answer to take the users choice and call it in the
+    accept_user_answer function.
+
+    4.local variable (correct) to call the check_user_anser function
+    and increment score by 1 and to give a point for the correct answer.
+
+    5. end_game fucntion to take users name (name) and end the game
+
+
     """
     game_intro()
 
