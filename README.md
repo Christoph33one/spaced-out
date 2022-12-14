@@ -2,7 +2,6 @@
 
 👨🏻‍🚀 Spaced Out is a short quiz on space travel. This quick quiz will test your space knowledge on planets, rocket science and space history. Just take your time to answer as best as you can, enjoy and good luck!
 
-![](assets/images/game%20main%20page.png)
 
 # List of contents
 <li><a href="#design ">Design</a></li>
